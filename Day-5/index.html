@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DOM Events Practice</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    ul {
+      padding: 0;
+    }
+    li {
+      list-style: none;
+      padding: 8px;
+      margin: 4px 0;
+      background: #eee;
+      cursor: pointer;
+    }
+    .box {
+      padding: 20px;
+      margin-top: 20px;
+      background: lightblue;
+    }
+  </style> -->
+</head>
+<body>
+
+  <h2>1️⃣ Controlled Input</h2>
+  <input id="nameInput" type="text" placeholder="Type your name" />
+  <p>Live value: <span id="output"></span></p>
+
+  <hr />
+
+  <h2>2️⃣ Event Delegation (Click a list item)</h2>
+  <ul id="list">
+    <li class="item"><span>Item 1</span></li>
+    <li class="item"><span>Item 2</span></li>
+    <li class="item"><span>Item 3</span></li>
+  </ul>
+
+  <button id="addItem">Add Item</button>
+
+  <hr />
+
+  <h2>3️⃣ Event Bubbling</h2>
+  <div id="parent" class="box">
+    Parent Div
+    <button id="child">Child Button</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
